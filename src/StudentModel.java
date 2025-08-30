@@ -1,5 +1,13 @@
 public class StudentModel {
     private String name;
-    public StudentModel(String name) { this.name = name; }
-    public String getName() { return name; }
+    private int age;
+
+    public StudentModel(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public void showInfo() {
+        System.out.println("Name: " + name + ", Age: " + age);
+    }
 }
